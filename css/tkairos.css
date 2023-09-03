@@ -1,0 +1,316 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans"
+}
+
+html,body{
+	height: 100%;
+}
+
+@font-face{
+	src:url('../fonts/OpenSans-Light.ttf');
+	font-family: "Open Sans";
+}
+
+/*DIVS GERAIS*/
+
+.clear{
+	clear: both;
+}
+
+.center{
+	margin: 0 auto;
+	max-width: 850px;
+	padding: 0 2%;
+}
+
+.caixa{
+	max-width: 900px;
+	height: 90px;
+	margin: 0 auto;
+}
+/*----------*/
+
+header{
+	width: 100%;
+	padding:0 2%;
+
+}
+
+/*O Menu foi trabalhado em CSS3 Separado*/
+
+/*EDITANDO O CONTAINER BANER*/
+.container-banner{
+	width: 100%;
+	padding:0 2%;
+	height: 695px;
+	background-image:url('../images/amo.jpg');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+.container-banner > .center{
+	height: 100%;
+}
+
+/*editando a area da pesquisa*/
+
+.pesquisa{
+	text-align: center;
+	width: 100%;
+	height: 60px;
+	background-color: rgb(231,169,6);
+}
+
+/*Fazendo o Container1*/
+.container1{
+	float: left;
+	padding: 10px 2%;
+	margin-top: 30px;
+	display: inline-block;
+	width: 70%;
+	height: 650px;
+	border-width: 6px;
+	border-color: rgba(120,120,120,0.5);
+	border-style: solid;
+	background-color: white;
+	background-clip:padding-box;
+
+}
+
+.container1 h2{
+	font-size: 25px;
+	color: #999;
+}
+.container1 h3{
+	font-weight: normal;
+	color: #999;
+	font-size: 18px;
+}
+
+/*editando o formulario*/
+
+.input1{
+	width: 49%;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.input2 > .viagem{
+	width: 100%;
+}
+
+.input2 input[type=reset]{
+	margin-top:10px;
+	width: 100%;
+	max-width: 250px;
+	height: 35px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 5px;
+	background: red;
+	color: white;
+	cursor: pointer;
+}
+
+.input1 input[type=text],
+.input1 input[type=number]{
+
+	margin-top:10px;
+	width: 100%;
+	height: 35px;
+	padding: 8px 10px 8px 10px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.input2 span{
+	display: inline-block;
+	width: 100%;
+	font-size: 18px;
+	font-weight: bold;
+	color: #434343;
+	text-align: left;
+}
+
+form select.partida_municipio,
+form select.partida_rua,
+form select.chegada_municipio,
+form select.chegada_rua{
+	margin-top:10px;
+	width: 100%;
+	height: 35px;
+	padding: 8px 10px 8px 10px;
+	border: 1px solid #ccc;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.input1 input[type=text],
+form select.partida_municipio,
+form select.partida_rua,
+form select.chegada_municipio,
+form select.chegada_rua:focus{
+	outline: none;
+}
+
+.container1 p{
+	display: inline-block;
+	width: 100%;
+	color: red;
+	font-size: 18px;
+	margin: 10px 0;
+	font-weight: bold;
+}
+
+.container1 input[type=submit]{
+	color: white;
+	font-size: 20px;
+	width: 80%;
+	max-width: 300px;
+	height: 50px;
+	display: inline-block;
+	background-color: #363A6D;
+	border-top:0;
+	border-right: 0;
+	border-left: 0;
+	cursor: pointer;
+	border-bottom: 5px solid #4A5097;
+	border-radius: 5px;
+}
+
+.container1 input[type=submit]:hover{
+	background-color: #323665;
+}
+
+.container1 .input-submit-container{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.input2{
+	width: 100%;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+
+/*Fazendo o Container2*/
+.container2{
+	text-align: center;
+	width: 28%;
+	height: 600px;
+	margin-top: 30px;
+	background-color: rgba(231,169,6,0.2);
+	float: right;
+}
+
+.container2 h2{
+	font-weight: normal;
+	padding-top: 20px;
+	color: white;
+	font-size: 18px;
+}
+
+.container2 .lado1{
+	float: left;
+	width: 100%;
+	height: 300px;
+	background-image: url('../images/apple.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 5px solid  rgba(231,169,6,0.2);
+}
+
+.container2 .lado2{
+	float: left;
+	width: 100%;
+	height: 300px;
+	background-image: url('../images/courokairos.jpg');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 5px solid  rgba(231,169,6,0.2);
+}
+
+/*AQUI VEM O BOTAO RELAMPAGO(local - menu.css)*/
+
+.section-1{
+	padding: 20px 2%;
+}
+
+.section-1 h2{
+	text-align: center;
+	color: #462663;
+	font-weight: normal;
+	font-size: 25px;
+}
+
+.container-section{
+	margin-top: 30px;
+	text-align: center;
+}
+
+.container-single{
+	float: left;
+	width: 33.3%;
+	padding: 20px;
+}
+
+.container-single img{
+	width: 70px;
+}
+
+.container-single h2{
+	font-size: 18px;
+}
+
+.container-single p{
+	display: inline-block;
+	text-align: justify;
+	padding: 10px;
+	font-size: 13px;
+}
+
+section.paralax{
+	width: 100%;
+	height: 250px;
+	background-image: url('../images/baner2.png');
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+}
+
+section.paralax .coverflow{
+	width: 100%;
+	height: 250px;
+	background-color: rgba(20,20,20,0.6);
+}
+
+section.paralax .center{
+	padding: 50px 2%;
+}
+
+section.paralax h2{
+	font-weight: normal;
+	color: white;
+	font-size: 30px;
+	margin: 10px;
+}
+
+section.paralax p{
+	width: 100%;
+	max-width: 768px;
+	margin: 10px 0;
+	display: inline-block;
+	color: white;
+	font-size: 13px;
+}
